@@ -1,20 +1,20 @@
 
 class Bus extends Transport{
-    
-    public Bus(int wid, int id) {
-        super(wid, id);
+    public Bus( int id) {
+        super(id);
+        width=10;
        
     }
 
     public void setWid(int wid) {
-        this.wid = wid;
+        this.width = wid;
     }
 
     public int getWid() {
-        return wid;
+        return width;
     }
 
-    public int  getid() {
+    public int  getId() {
         return id;
     }
 
@@ -22,8 +22,8 @@ class Bus extends Transport{
         this.id = id;
     }
     
-    @Override
-    public void calc(double hour){
-        System.out.println("the  cost of your parking is "+hour*15.0 +" L.E");
+
+   public int calc(){
+      return 15;
    }
 }

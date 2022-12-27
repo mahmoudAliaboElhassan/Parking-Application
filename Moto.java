@@ -1,9 +1,10 @@
  class Moto extends Transport {
-    public Moto(int wid, int id) {
-        super(wid, id);
+    public Moto(int id) {
+        super(id);
+        width=2;
     }
     public int getWid() {
-        return wid;
+        return width;
     }
 
     public int getId() {
@@ -11,7 +12,7 @@
     }
 
     public void setWid(int wid) {
-        this.wid = wid;
+        this.width = wid;
     }
 
     public void setId(int id) {
@@ -20,7 +21,7 @@
 
  
     @Override
-    public void calc(double hour){
-        System.out.println("the  cost of your parking is "+hour*5 +" L.E");
-   }
+   public int calc(){
+      return 5;
+   } 
 }

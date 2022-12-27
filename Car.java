@@ -1,17 +1,18 @@
 class Car extends Transport {
-    public Car(int wid, int id) {
-        super(wid, id);
+    public Car( int id) {
+        super(id);
+        width=5;
     }
 
    public void setWid(int wid) {
-        this.wid = wid;
+        this.width = wid;
     }
 
     public int getWid() {
-        return wid;
+        return width;
     }
 
-    public int  getid() {
+    public int  getId() {
         return id;
     }
 
@@ -19,8 +20,8 @@ class Car extends Transport {
         this.id = id;
     }
     @Override
-    public void calc(double hour){
-      System.out.println("the  cost of your parking is "+hour*10 +" L.E");
+   public int calc(){
+      return 10;
    }
     
 }

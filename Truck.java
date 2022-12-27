@@ -1,9 +1,11 @@
 class Truck extends Transport {
-    public Truck(int wid, int id) {
-        super(wid, id);
-    }
+public Truck(int id)
+{
+    super(id);
+    width=7;
+}
     public void setWid(int wid) {
-        this.wid = wid;
+        this.width = wid;
     }
 
     public void setId(int id) {
@@ -11,14 +13,14 @@ class Truck extends Transport {
     }
 
     public int getWid() {
-        return wid;
+        return width;
     }
 
     public int getId() {
         return id;
     }
     @Override
-    public void calc(double hour){
-       System.out.println("the  cost of your parking is "+hour*15 +" L.E");
+    public int calc(){
+      return 15;
    }
 }

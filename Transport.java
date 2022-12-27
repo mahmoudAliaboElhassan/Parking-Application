@@ -1,14 +1,11 @@
  class Transport {
-    int wid;
+    int width;
     int id;
-   public Transport(int wid,int id){
-    this.wid=wid;
+   public Transport(int id){
     this.id=id;
     }
-
-
-   public void calc(double hour){
-       System.out.println("the hour Will spend in park ");
+   public int calc(){
+      return 0;
    }
 }
 
